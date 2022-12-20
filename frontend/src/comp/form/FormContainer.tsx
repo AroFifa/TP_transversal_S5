@@ -1,4 +1,5 @@
 import { IonBackButton, IonButton, IonCard, IonCardContent, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCol, IonGrid, IonIcon, IonInput, IonItem, IonLabel, IonList, IonRow, IonSelect, IonSelectOption } from '@ionic/react';
+import { on } from 'events';
 import { logIn } from 'ionicons/icons';
 import './FormContainer.css';
 
@@ -30,17 +31,17 @@ const FormContainer: React.FC<ContainerProps> = (props) => {
 
                 <IonItem key={index} fill="solid">
                   <IonLabel position="floating">{element.label}</IonLabel>
-                  <IonInput type={element.type} defaultValue={element.defaultValue}  name={element.name} placeholder={element.placeholder}></IonInput>
+                  <IonInput type={element.type} onIonChange={element.onchange} defaultValue={element.defaultValue}  name={element.name} placeholder={element.placeholder}></IonInput>
                 </IonItem>
             );}else{
               return(
 
                   <IonItem key={index} fill="solid">
                   <IonLabel position="floating">{element.label}</IonLabel>
-                  <IonSelect placeholder={element.placeholder}>
+                  <IonSelect placeholder={element.placeholder} onIonChange={element.onchange} ref={element.ref}>
                     {
                       element.data?.map((e:any,index:any)=>{
-                        return (<IonSelectOption key={index} value={e.value}>{e.label}</IonSelectOption>);
+                        return (<IonSelectOption key={index}  value={e.value}>{e.label}</IonSelectOption>);
                       })
                     }
                     

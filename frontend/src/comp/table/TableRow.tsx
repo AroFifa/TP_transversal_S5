@@ -18,8 +18,11 @@ function getValue(obj:any,column:string) {
   var splits=column.split(".");
 
   var value:any=obj;
+  
+  
   splits.map((element)=>{
-    value=value[element];
+
+    value=value?value[element]:null;
     
   });
   

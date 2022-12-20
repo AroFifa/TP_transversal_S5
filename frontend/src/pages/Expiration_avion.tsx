@@ -17,10 +17,10 @@ const Expiration_avion: React.FC = () => {
 
   
 
-  var header=[{header: "matricule", col: "matricule"},{header: "modèle", col: "model.model"},{header: "marque", col: "model.marque.marque"},{header: "Dernière payement",col:"payement_assurance.date_payement"},{header: "Date d'expiration",col :"payement_assurance.date_expiration"}];
-  
+  var header=[{label: "matricule", col: "matricule"},{label: "modèle", col: "modele.modele"},{label: "marque", col: "matricule"},{label: "Dernière payement",col:"payement_assurance.date_payement"},{label: "Date d'expiration",col :"payement_assurance.date_expiration"}];
+
   var additional_col=[
-    {header: "",column: "détails", link: "details",params: ["id"]}
+    {label: "",column: "détails", link: "login",params: ["id"]}
   ]
 
   var m1=(mois!==undefined)?Number(mois):0;

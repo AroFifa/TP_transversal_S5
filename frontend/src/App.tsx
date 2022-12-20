@@ -10,7 +10,7 @@ import {
   setupIonicReact
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
-import { accessibilityOutline, bus, car, card, cardSharp, caretDown, carSport, ellipse, help, helpBuoy, helpCircle, logIn, settings, settingsOutline, settingsSharp, square, triangle } from 'ionicons/icons';
+import { accessibilityOutline, airplane, bus, car, card, cardSharp, caretDown, carSport, ellipse, help, helpBuoy, helpCircle, logIn, settings, settingsOutline, settingsSharp, square, triangle } from 'ionicons/icons';
 import Tab1 from './pages/Tab1';
 import Tab2 from './pages/Tab2';
 import Tab3 from './pages/Tab3';
@@ -48,7 +48,7 @@ const App: React.FC = () => (
           <Route exact path="/tab2">
             <Tab2 />
           </Route>
-          <Route exact path="/login">
+          <Route exact path="/login/:id">
             <Authentification />
           </Route>
           <Route path="/details/:id">
@@ -60,7 +60,7 @@ const App: React.FC = () => (
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
           <IonTabButton tab="tab1" href="/tab1">
-            <IonIcon icon={car} />
+            <IonIcon icon={airplane} />
             <IonLabel>Liste des avions</IonLabel>
           </IonTabButton>
           <IonTabButton tab="tab2" href="/tab2">

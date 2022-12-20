@@ -12,12 +12,19 @@ const Details_avion: React.FC = () => {
     const params:any=useParams();
     
     useEffect(() => {
+
+        var token=sessionStorage.getItem("bearer");
+
+        
         var content = {
         method: "GET",
         headers: {
             "Content-Type": "application/json",
+            "Authorization":token?token:""
         },
+        
         };
+
     
         fetch("http://localhost:8080/avions/"+params.id+"/kilometrages", content)
         .then((response) => {
@@ -45,14 +52,13 @@ const Details_avion: React.FC = () => {
     var info={title: "Détails"}
     var toShow=[
         {label: "matricule",col: "matricule"},
-        {label: "Type",col: "type.type"},
-        {label: "Modèle",col: "model.model"},
-        {label: "Marque",col: "model.marque.marque"},
-        {label: "Année",col: "annee"},
-        {label: "image",col: "image"}
+        {label: "Categorie",col: "categorie.categorie"},
+        {label: "Modèle",col: "modele.modele"},
+        {label: "Marque",col: "modele.marque.marque"},
+        {label: "Année",col: "annee"}
     ]
 
-    var header=[{header: "date", col: "date"},{header: "Debut km", col: "debut_km"},{header: "Fin km", col: "fin_km"}];
+    var header=[{label: "date", col: "date"},{label: "Debut km", col: "debut_km"},{label: "Fin km", col: "fin_km"}];
   
     var dataD:any=data;
     

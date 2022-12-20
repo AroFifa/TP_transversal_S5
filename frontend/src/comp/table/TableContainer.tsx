@@ -2,7 +2,7 @@ import { IonCol, IonGrid, IonInput, IonRow } from '@ionic/react';
 import './TableContainer.css';
 import TableRow from './TableRow';
 class additional_col{
-  header!: string;
+  label!: string;
   column!: string;
   link!: string;
   params!: string[];
@@ -11,7 +11,7 @@ class additional_col{
   
 }
 class header{
-  header?: string;
+  label?: string;
   col?: string;
 }
 interface ContainerProps {
@@ -28,10 +28,10 @@ const TableContainer: React.FC<ContainerProps> = (props) => {
 
         <IonRow>
           {header?.map((element:any,index:any)=>{
-            return(<IonCol class='header' key={index}>{element.header}</IonCol>);
+            return(<IonCol class='header' key={index}>{element.label}</IonCol>);
           })}
           {props.additional_column?.map((element,index)=>{
-            return(<IonCol class='header' key={index}>{element.header}</IonCol>);
+            return(<IonCol class='header' key={index}>{element.label}</IonCol>);
           })}
         </IonRow>
 

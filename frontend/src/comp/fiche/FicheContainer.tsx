@@ -4,6 +4,7 @@ interface ContainerProps {
     object?: object;
     toshow?:any[];
     info?:object;
+    img?:String;
 
 
 }
@@ -27,8 +28,15 @@ function getValue(obj:any,column:string) {
     return value;
   
 }
+
+var img:any=props.img?props.img:require("./card-media.png");
+
+
   return (
-    <IonCard>
+    <IonCard>      
+      
+      <img src={img} />
+
       <IonCardHeader>
         <IonCardTitle>{info.title}</IonCardTitle>
         <IonCardSubtitle>{info.subtitle}</IonCardSubtitle>

@@ -1,18 +1,22 @@
 import { IonCol, IonGrid, IonInput, IonRow } from '@ionic/react';
 import { useEffect, useState } from 'react';
+import CardContainer from '../comp/card/CardContainer';
 import TableContainer from '../comp/table/TableContainer';
 import './Tab2.css';
 
 const Liste_avions: React.FC = () => {
 
-  var header=[{header: "matricule", col: "matricule"},{header: "modèle", col: "model.model"},{header: "marque", col: "model.marque.marque"}];
+  var header=[{label: "matricule", col: "matricule"},{label: "modèle", col: "modele.modele"},{label: "marque", col: "matricule"}];
   
   var additional_col=[
-    {header: "",column: "détails", link: "details",params: ["id"]}
+    {label: "",column: "détails", link: "login",params: ["id"]}
   ]
 
 
   const [avions, setavions] = useState([]);
+
+  console.log(avions);
+  
 
 
   useEffect(() => {
