@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e1e05344.css",
+    "main.js": "/static/js/main.7cd95073.js",
+    "static/js/443.5a4d9667.chunk.js": "/static/js/443.5a4d9667.chunk.js",
+    "static/js/738.1b5d868a.chunk.js": "/static/js/738.1b5d868a.chunk.js",
+    "static/js/372.7c3d67d0.chunk.js": "/static/js/372.7c3d67d0.chunk.js",
+    "static/js/856.ac2d221c.chunk.js": "/static/js/856.ac2d221c.chunk.js",
+    "static/js/851.fb68b204.chunk.js": "/static/js/851.fb68b204.chunk.js",
+    "static/js/22.20c152c8.chunk.js": "/static/js/22.20c152c8.chunk.js",
+    "static/js/272.fd1c2253.chunk.js": "/static/js/272.fd1c2253.chunk.js",
+    "static/js/841.a0a03fab.chunk.js": "/static/js/841.a0a03fab.chunk.js",
+    "static/js/186.2bcdab2a.chunk.js": "/static/js/186.2bcdab2a.chunk.js",
+    "static/js/377.19d375af.chunk.js": "/static/js/377.19d375af.chunk.js",
+    "service-worker.js": "/service-worker.js",
+    "static/media/card-media.png": "/static/media/card-media.a30e0be718f6ae29fb8d.png",
+    "index.html": "/index.html",
+    "main.e1e05344.css.map": "/static/css/main.e1e05344.css.map",
+    "main.7cd95073.js.map": "/static/js/main.7cd95073.js.map",
+    "443.5a4d9667.chunk.js.map": "/static/js/443.5a4d9667.chunk.js.map",
+    "738.1b5d868a.chunk.js.map": "/static/js/738.1b5d868a.chunk.js.map",
+    "372.7c3d67d0.chunk.js.map": "/static/js/372.7c3d67d0.chunk.js.map",
+    "856.ac2d221c.chunk.js.map": "/static/js/856.ac2d221c.chunk.js.map",
+    "851.fb68b204.chunk.js.map": "/static/js/851.fb68b204.chunk.js.map",
+    "22.20c152c8.chunk.js.map": "/static/js/22.20c152c8.chunk.js.map",
+    "272.fd1c2253.chunk.js.map": "/static/js/272.fd1c2253.chunk.js.map",
+    "841.a0a03fab.chunk.js.map": "/static/js/841.a0a03fab.chunk.js.map",
+    "186.2bcdab2a.chunk.js.map": "/static/js/186.2bcdab2a.chunk.js.map",
+    "377.19d375af.chunk.js.map": "/static/js/377.19d375af.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e1e05344.css",
+    "static/js/main.7cd95073.js"
+  ]
+}

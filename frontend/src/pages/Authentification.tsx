@@ -66,8 +66,8 @@ const Authentification: React.FC = () => {
   var info={title: ""}
   var fields=[
     {label: "",name: "id_avion",type:"hidden",placeholder: "", onchange: setIdAvion},
-    {label: "Adresse e-mail",name: "email",type:"email",placeholder: "email", onchange: setEmail},
-    {label: "Mot de passe",name: "passwd",type:"password",placeholder: "password", onchange: setPasswd}
+    {label: "Adresse e-mail",name: "email",type:"email", defaultValue: "rakoto@gmail.com",placeholder: "email", onchange: setEmail},
+    {label: "Mot de passe",name: "passwd",type:"password", defaultValue: "mdp",placeholder: "password", onchange: setPasswd}
   ]
   var button={label: "Se connecter",icon: {logIn} }
 

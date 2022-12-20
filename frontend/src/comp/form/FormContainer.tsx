@@ -31,14 +31,14 @@ const FormContainer: React.FC<ContainerProps> = (props) => {
 
                 <IonItem key={index} fill="solid">
                   <IonLabel position="floating">{element.label}</IonLabel>
-                  <IonInput type={element.type} onIonChange={element.onchange} defaultValue={element.defaultValue}  name={element.name} placeholder={element.placeholder}></IonInput>
+                  <IonInput defaultValue={element.defaultValue} type={element.type} onIonChange={element.onchange}  name={element.name} placeholder={element.placeholder}></IonInput>
                 </IonItem>
             );}else{
               return(
 
                   <IonItem key={index} fill="solid">
                   <IonLabel position="floating">{element.label}</IonLabel>
-                  <IonSelect placeholder={element.placeholder} onIonChange={element.onchange} ref={element.ref}>
+                  <IonSelect defaultValue={element.defaultValue} placeholder={element.placeholder} onIonChange={element.onchange} ref={element.ref}>
                     {
                       element.data?.map((e:any,index:any)=>{
                         return (<IonSelectOption key={index}  value={e.value}>{e.label}</IonSelectOption>);
