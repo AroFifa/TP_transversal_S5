@@ -1,0 +1,8 @@
+{
+  "name": "FirstApp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "cfd00151"
+}
