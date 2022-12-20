@@ -1,0 +1,12 @@
+ion-grid.table ion-col{
+    border: 1px;
+    border-style: solid;
+}
+
+ion-grid.table ion-col.header{
+    font-weight: bold;
+    text-transform: capitalize;
+    border: 2px;
+    border-style: solid;
+}
+
